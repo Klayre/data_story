@@ -22,6 +22,6 @@ The first row is the Story title & description (and your instance URL), any row 
 
 <h2>Demo</h2>
 
-[Try it out here!](https://rawgit.com/klayre/data_story/master/index.html)
+[Try it out here!](https://github.com/Klayre/data_story/blob/master/datastorylooker/index.html)
 
 This story lives in [this spreadsheet](https://docs.google.com/spreadsheets/d/1Zfe9-vwsvKzywPhduXgncFFnR25ra61LUDr5O9nUey8/edit#gid=0)
