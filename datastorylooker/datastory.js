@@ -1,13 +1,13 @@
 // on document ready
 $(function() {
     // extract the spreadsheet ID from the URL (if any, otherwise use the demo)
-    var spreadsheet_id = (getParameterByName('spreadsheet_id') ? getParameterByName('spreadsheet_id') : '151wYbceiQIj8NEBiLCZNDFX1CEtirddu7tCOU4NR6AA')
+    var spreadsheet_id = (getParameterByName('spreadsheet_id') ? getParameterByName('spreadsheet_id') : '1Zfe9-vwsvKzywPhduXgncFFnR25ra61LUDr5O9nUey8')
         // update the menu
     $("#sheet_id").val(spreadsheet_id)
     $("#primary_color").val("#7e64e0")
 
     // create the URL to fetch from
-    var spreadsheet_public_url = 'https://spreadsheets.google.com/feeds/list/' + spreadsheet_id + '/od6/public/values?alt=json'
+    var spreadsheet_public_url = 'https://docs.google.com/spreadsheets/d/' + spreadsheet_id + '/pubhtml'
         // load the datastory
     loadDatastory(spreadsheet_public_url)
 
@@ -16,7 +16,7 @@ $(function() {
         // if enter
         if (a.keyCode == 13) {
             $("#sheet_id_label").html("Updating....")
-            spreadsheet_public_url = 'https://spreadsheets.google.com/feeds/list/' + spreadsheet_id + '/od6/public/values?alt=json'
+            spreadsheet_public_url = 'https://docs.google.com/spreadsheets/d/' + spreadsheet_id + '/pubhtml'
             clearStory()
             loadDatastory(spreadsheet_public_url)
             setTimeout(function() {
